@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Room";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-8">
+        <video id="player" width="100%"></video>
+        <input id="volumeBar" type="range" min="1" max="40">
+    </div>
+    <div class="col-md-4">
+
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript" src="~/Scripts/VideoChat/Chat.js"></script>
+}
+@section styles{
+    <link type="text/css" rel="stylesheet" href="~/Content/VideoChat/Room.css" />
+}
