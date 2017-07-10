@@ -1,6 +1,6 @@
 ﻿#container, #container div.row, #container div.row div.col-md-8 {height: 100%; overflow:hidden;}
 #container div.col-md-8 video#player {max-height:70%;background-color:black;}
-#volumeBar {display:none;}
+#gainBar {display:none;}
 
 @media (max-width:768px) {
     #container, #container div.col-md-8 video#player {

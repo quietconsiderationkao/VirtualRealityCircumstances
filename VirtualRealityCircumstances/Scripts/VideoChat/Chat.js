@@ -12,13 +12,13 @@
         // Create a MediaStreamAudioSourceNode
         // Feed the HTMLMediaElement into it
         var audioCtx = new AudioContext();
-        audioCtx.sampleRate = 22050;
+        audioCtx.sampleRate = 192000;
 
         var source = audioCtx.createMediaStreamSource(stream);
         // Create a biquadfilter
         var biquadFilter = audioCtx.createBiquadFilter();
-        biquadFilter.type = "lowshelf";
-        biquadFilter.frequency.value = 1000;
+        biquadFilter.type = "allpass";
+        biquadFilter.frequency.value = 5000000000;
         biquadFilter.gain.value = range.value;
         // connect the AudioBufferSourceNode to the gainNode
         // and the gainNode to the destination, so we can play the
